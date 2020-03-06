@@ -25,6 +25,11 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+    def PreOrder(self):
+        print(self.val)
+        return [self.val,
+                self.left is None if -1 else self.left.PreOrder(),
+                self.left is None if -1 else self.right.PreOrder()]
 
 class Solution(object):
     def maxDepth(self, root):
@@ -62,6 +67,8 @@ c.right = c_right
 
 a.left = b
 a.right = c
+
+print(a.PreOrder())
 
 s = Solution()
 print(s.maxDepth(a))

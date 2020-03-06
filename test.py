@@ -1,4 +1,3 @@
-a = []
-b = 1
-a.append(b)
-print(len(a))
+
+a = (2 if False else 4)
+print(a)
