@@ -1,3 +1,3 @@
 
-a = (2 if False else 4)
-print(a)
+for i in range(0,1):
+    print(i)
