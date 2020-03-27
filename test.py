@@ -1,2 +1,2 @@
-l = []
-print(l.pop())
+a = True
+print(~a)
